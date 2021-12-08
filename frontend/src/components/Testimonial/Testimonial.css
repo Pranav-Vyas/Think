@@ -1,7 +1,7 @@
 #testimonials {
-    background-color: #ef8172;
+    background-color: #EAEAEA;
     text-align: center;
-    color: #fff;
+    color: #000;
   }
   
   .carousel-item {
@@ -9,7 +9,7 @@
   }
   
   #press {
-    background-color: #ef8172;
+    background-color: #EAEAEA;
     text-align: center;
     padding-bottom: 3%;
   }
