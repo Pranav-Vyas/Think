@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import './HomeTitle.css';
 
 function HomeTitle() {
@@ -7,20 +9,23 @@ function HomeTitle() {
             {/* Nav Bar */}
             <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg navbar-dark">
-                    <a className="navbar-brand" href="">Brand-Name</a>
+                    <a className="navbar-brand" href="/">Think</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#footer">Contact</a>
+                                <HashLink smooth className="nav-link" to="#">About</HashLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#pricing">Pricing</a>
+                                <HashLink smooth className="nav-link" to="/#testimonials">Products</HashLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#cta">Download</a>
+                                <HashLink smooth className="nav-link" to="/#footer">Contact</HashLink>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/login">Login</Link>
                             </li>
                         </ul>
                     </div>
@@ -32,8 +37,9 @@ function HomeTitle() {
 
                 <div className="row">
                     <div className="col-lg-6">
-                        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, qui.</h1>
-                        
+                        {/* <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, qui.</h1> */}
+                        <p>Established in 2012, Indian Emporium has made a name for itself in the market by proving to be a reliable manufacturer of high quality Printed Fabric and Apparel manufacturer. State-of-the-art machinery combined with efficient manufacturing processes, strong technical expertise and skilled labor coupled with innovation is the key to our growth and success. Indian Emporium has a stringent process control in its Manufacturing process. Indian Emporium has established its Quality and Reliability among its customers.
+We are continually improving to cater to the ever evolving needs of our customers, industry and environment. Our continual improvement programs are focused on Cost Efficiency, reducing environmental hazard and reducing the manufacturing hazards for our employees. We believe in building business relationship on the basis of trust.</p>
                         <button type="button" className="btn btn-dark btn-lg download-button">Download</button>
                         
                         <button type="button" className="btn btn-outline-light btn-lg download-button">Download</button>

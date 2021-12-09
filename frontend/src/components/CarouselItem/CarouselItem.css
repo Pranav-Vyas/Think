@@ -1,0 +1,11 @@
+.carousel-item {
+    /* padding: 7% 15%; */
+    padding: 7% 3%;
+    
+}
+
+.carousel-img {
+    width: 250px;
+    height: 250px;
+    margin: 20px 42px;   
+}
