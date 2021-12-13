@@ -1,0 +1,141 @@
+.nav-wrapper {
+    padding: 2% 15% 0%;
+    background-color: #000;
+    
+}
+
+.middle-wrapper {
+    background-color: #e9e6e6;
+    padding: 7% 15% ;
+    min-height: 600px;
+}
+
+.profile-page-img {
+    width: 270px;
+    height: 250px;
+    margin: 20px 42px;   
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-page-img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.profile-img-div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.deleteIcon {
+    font-size: 33px !important;
+    
+}
+
+
+/* .profile-img-div > .material-icons {
+    font-size: 33px;
+    
+}
+
+.profile-img-div > .material-icons:hover {
+    cursor: pointer;
+    background-color: #CFCDCD;
+    border-radius: 20px;
+} */
+
+.add-circle {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-circle > .upload-btn> .material-icons {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.add-circle > .upload-btn> .material-icons:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.upload-btn {
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.upload-btn > input[type="file"] {
+    display: none;
+}
+
+.addPhoto-button {
+    background-color: #212529;
+    border: none ;
+    color: #E9E6E6 ;
+    font-weight: 500 ;
+    text-transform: inherit ;
+    border-radius: 30px ;
+    width: 80px;
+    height: 40px ;
+    /* margin-top: 5px ; */
+    margin-left: 10px ;
+    cursor: pointer;
+}
+
+.addPhoto-button:hover {
+    /* background-color: #E9E6E6; */
+    background-color: white;
+    color: #212529;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.addPhoto-button:disabled {
+    background-color: rgb(90, 88, 88);
+    color: #E9E6E6;
+    cursor: auto;
+    box-shadow:none;
+}
+
+.add-input > input {
+    width: 130px;
+    height: 38px;
+    border-radius: 10px;
+    border: 0.5px solid #212529;
+    padding-left: 10px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer ;
+    background-color: #CFCDCD;
+    border-radius: 50px;
+}
+
+.delete-button:hover {
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.img-details > h2{
+    font-size: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,31 @@
+.navbar {
+    padding: 0 0 30px;
+    background-color: #000;
+}
+  
+.nav-item {
+    padding: 0 18px;
+}
+  
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+.navbar-nav {
+    margin-left: auto!important;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: 1px solid #BFBFBF;
+}
+
+.dropdown-item {
+    color: #BFBFBF;
+}
+
+.dropdown-item:hover {
+    color: #000;
+    background-color: #BFBFBF;
+}

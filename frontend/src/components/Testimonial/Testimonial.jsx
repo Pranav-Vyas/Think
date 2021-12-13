@@ -16,17 +16,23 @@ function Testimonial({images}) {
                     {
                         runCallback(() => {
                             const row = [];
-                            for (var i = 0; i < images.length; i=i+3) {
-                                if (i === 0) {
-                                    row.push(
-                                        <CarouselItem key={i} active="active" images={images.slice(i,i+3)} />     
-                                    );
-                                } else {
-                                    row.push(
-                                        <CarouselItem key={i} active="" images={images.slice(i,i+3)} />     
-                                    );
+                            if (images.length > 0) {
+                                for (var i = 0; i < images.length; i=i+3) {
+                                    if (i === 0) {
+                                        row.push(
+                                            <CarouselItem key={i} active="active" images={images.slice(i,i+3)} />     
+                                        );
+                                    } else {
+                                        row.push(
+                                            <CarouselItem key={i} active="" images={images.slice(i,i+3)} />     
+                                        );
+                                    }
+                                    
                                 }
-                                
+                            } else {
+                                row.push(
+                                    <CarouselItem active="active" images={[]} />     
+                                );
                             }
                             return row;
                           })
