@@ -8,7 +8,7 @@ function HomeTitle() {
     return (
         <div id="home-title">
             <div className="nav-wrapper">
-                <NavBar />
+                <NavBar curPage="home" />
             </div>
             
             <div className="container-fluid">

@@ -37,7 +37,7 @@ function Login() {
         const data = await res.json();
         console.log("in login data is ");
         if (res.status > 200 || !data) {
-            alert("Login failed");
+            alert("Invalid Credentials");
             navigate('/login')
         } else {
             console.log(data.token);

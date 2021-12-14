@@ -33,7 +33,7 @@ function Admin() {
                     throw new Error(res.error);
                 } else {
                     console.log("authenticated");
-                    
+
                 }
 
             } catch {
@@ -66,11 +66,10 @@ function Admin() {
 
     useEffect(() => {
         console.log('admin useEffect');
-        
         fetchData();
     }, [])
 
-    
+
     const handleOnChange = (e) => {
         value = e.target.value;
         setNameText(value);
@@ -102,8 +101,11 @@ function Admin() {
     }
 
     const handleFileChange = (e) => {
-        console.log(e.target.files[0].name);
-        setfileName(e.target.files[0].name)
+        if (e.target.files.length > 0){
+            console.log(e.target.files);
+            console.log(e.target.files[0].name);
+            setfileName(e.target.files[0].name)
+        }
     }
 
     const handleDelete = async (id) => {
@@ -131,7 +133,7 @@ function Admin() {
     return (
         <div>
             <div className="nav-wrapper">
-                <NavBar />
+                <NavBar curPage="admin" />
             </div>
             <div className="middle-wrapper">
                 <div className="add-circle">
@@ -145,6 +147,7 @@ function Admin() {
                         <button onClick={handleUploadClick} disabled={!NameText.trim()} type='submit' className="addPhoto-button" >Add</button>
                     </div>
                 </div>
+
                 <div className="row">
                     {
                         images.map((image) => {
@@ -160,6 +163,8 @@ function Admin() {
                         })
                     }
                 </div>
+
+
             </div>
             <Contact />
         </div>

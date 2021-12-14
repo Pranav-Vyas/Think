@@ -5,12 +5,14 @@ function CarouselItem({ active, images }) {
     return (
         <>
             
-            <div className={`carousel-item ${active}`}>
+            <div className={`row carousel-item ${active}`}>
                 {
                     images.map((image) => {
                         console.log(image.image);
                         return (
+                            
                             <img key={image._id} className="carousel-img" src={`http://localhost:5000/upload/${image._id}`} alt="" />
+                            
                         )
                     })
                 }

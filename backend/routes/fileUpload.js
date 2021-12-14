@@ -44,7 +44,7 @@ router.post("/", middleware, upload.single('image'), async (req, res) => {
 router.get("/all", async (req, res) => {
     console.log("in get all images route");
     try {
-        const images = await Image.find();
+        const images = await Image.find().sort({"createdAt": -1});
         if (!images) {
             throw new Error();
         }

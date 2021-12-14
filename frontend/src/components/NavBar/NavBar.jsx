@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./NavBar.css";
+import ThinkLogo from "../../images/think-logo.png";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { useNavigate } from "react-router-dom";
 
 
-function NavBar() {
+function NavBar({curPage}) {
 
     const [auth, setauth] = useState(false);
     let navigate = useNavigate();
@@ -66,7 +67,7 @@ function NavBar() {
     return (
         <>
             <nav id="#nav" className="navbar navbar-expand-lg navbar-dark">
-                <a className="navbar-brand" href="/">Think</a>
+                <a className={`navbar-brand brand-${curPage}`} href="/"><img className='logo' src={ThinkLogo} alt="Logo" /></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
