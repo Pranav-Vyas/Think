@@ -17,7 +17,7 @@
   
 .nav-link {
     font-size: 1.2rem;
-    font-family: 'Montserrat-Light', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-nav {
@@ -27,3 +27,7 @@
 .download-button {
     margin: 5% 3% 5% 0;
 }  
+.nav-logo{
+    height: 50%;
+  width: 50%;
+}
