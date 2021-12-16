@@ -1,0 +1,53 @@
+.navbar {
+    padding: 0 0 30px;
+    background-color: #000;
+}
+  
+.nav-item {
+    padding: 0 18px;
+}
+  
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+/* .navbar-brand {
+    width: 60px;
+    height: 60px;
+} */
+
+.brand-home {
+    width: 90px;
+    /* height: 90px; */
+}
+
+.brand-admin {
+    width: 50px;
+    /* height: 60px; */
+}
+
+
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-nav {
+    margin-left: auto!important;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: 1px solid #BFBFBF;
+}
+
+.dropdown-item {
+    color: #BFBFBF;
+}
+
+.dropdown-item:hover {
+    color: #000;
+    background-color: #BFBFBF;
+}
